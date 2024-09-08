@@ -1,0 +1,273 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+#logo{
+    height: 110px;
+    width: 130px;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;  /*postion related to normal position*/
+}
+
+ /* position-absolute position related to the parent tag which have position relative property */
+
+ #navbar{
+    display: flex; /* to make child inline*/
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center; /* to place a content vertically*/
+
+ }
+
+ .listItem{
+   display: inline-block;
+   margin: 10px 20px; 
+   list-style: none;
+
+ }
+
+ .listItem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    
+ }
+ .listItem a:hover{
+    color: red;
+ }
+
+ #title{
+    margin-top: 13%;
+    margin-left: 8%;
+ }
+
+ #title h1{
+    font-size: 50px;
+    font-weight: 800px;
+    margin-bottom: 20px;
+ }
+
+ #title p{
+    margin-bottom: 20px;
+ }
+
+ #name{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+ }
+
+ #dwnld{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+ }
+
+ #images{
+    width: 45%;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    height: 85%;
+ }
+
+ .imagegrp{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+ }
+
+ #images:hover #shape{
+   bottom: 70px;
+ }
+ #images:hover #girl{
+   left: 40%;
+ }
+
+#about{
+   margin: 19% 8% 0% 8%;
+}
+.heading{
+   text-align: center;
+}
+.heading h1{
+   font-size: 30px;
+}
+.heading span{
+   font-size: 20px;
+   color: green;
+}
+
+#about-content{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   column-gap: 4rem; /* 1rem = 16px*/
+   margin-top: 2rem;
+}
+
+#aboutimg img{
+   width: 80%;
+}
+
+#about-details p{
+   font-size: 18px;
+   text-align: justify;
+}
+
+#information{
+   margin-top: 2rem;
+}
+
+.info-box{
+   margin: 1rem;
+}
+
+.info-box span{
+   margin-left: 1rem;
+   font-size: 20px
+}
+
+#skill{
+   margin: 8% 8% 0 8%;
+}
+
+#skill-container{
+   display:grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 4rem; /* 1rem = 16px*/
+   margin-top: 2rem;
+}
+
+.bar-container{
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   padding: 20px 0;
+}
+.bar-container span{
+   font-size: 30px;   
+}
+
+.base-bar{
+   width: 100%;
+   background-color: black;
+   height: 0.5rem;
+   border-radius: 0.5rem;
+   position: absolute;
+   bottom: 0px;
+}
+
+.bar-container h3{
+   margin: 0;
+}
+
+#html-bar{
+   background-color: orange;
+   width: 95%;
+}
+
+#css-bar{
+   background-color: orange;
+   width: 88%;
+}
+
+#js-bar{
+   background-color: orange;
+   width: 89%;
+}
+
+#react-bar{
+   background-color: orange;
+   width: 89%;
+}
+
+#skill-img img{
+   width: 110%;
+}
+
+#icon-set{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 4%;
+}
+
+.icon, #up{
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 20px;
+   border-radius: 50%;
+   border: 1px solid black;
+}
+
+.icon:hover{
+   background-image: linear-gradient(to top left, rgb(255, 128, 0),rgb(255, 255, 255));
+}
+
+.icon a{
+   color: black;
+}
+
+.icon:hover a{
+   color: white;
+}
+
+.icon:hover i{
+   animation: shake 0.75s;
+}
+
+@keyframes shake {
+   10%{
+      transform: rotate(15deg);
+
+   }
+   20%{
+      transform: rotate(-15deg);
+
+   }
+   30%{
+      transform: rotate(15deg);
+
+   }
+   40%{
+      transform: rotate(-15deg);
+   }
+}
+
+footer{
+   padding: 4rem 0;
+}
+footer p{
+   text-align: center;
+   font-weight: 800;
+}
+
+#up{
+   background-image: linear-gradient(to bottom right, yellow, rgb(255, 170, 0));
+   float: right;
+}
+
+#up:hover a{
+   color: white;
+}
+
+html{
+   scroll-behavior: smooth;
+}
